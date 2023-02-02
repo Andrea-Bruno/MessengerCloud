@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>7bbbc99f-c2c2-421b-811c-d5a6e6a57bdb</UserSecretsId>
+    <Configurations>Debug;Release;DEBUG_RAM_CLOUD;DEBUG_RAM</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MessengerStorage\MessengerStorage.csproj" />
+  </ItemGroup>
+
+</Project>

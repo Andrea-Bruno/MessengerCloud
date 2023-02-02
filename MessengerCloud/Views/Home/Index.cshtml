@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var connected = Startup.Storage.Cloud.Context.IsConnected;
+    var pushNotificationCounter = NotificationServer.Notification.PushNotificationCounter;
+    var pushNotificationErrors = NotificationServer.Notification.PushNotificationErrors;
+    var lastPushNotificationError = NotificationServer.Notification.LastPushNotificationError;
+    var keepAliveFailures = Startup.Storage.Cloud.Context.KeepAliveFailures;
+    var pubKey = Startup.Storage.Cloud.Context.My.GetPublicKey();
+    var userId = Startup.Storage.Cloud.Context.My.GetId();
+    MessengerStorage.Communication.Counter.TryGetValue(MessengerStorage.Communication.Command.LoadData, out var LoadData);
+    MessengerStorage.Communication.Counter.TryGetValue(MessengerStorage.Communication.Command.LoadAllData, out var LoadAllData);
+    MessengerStorage.Communication.Counter.TryGetValue(MessengerStorage.Communication.Command.SaveData, out var SaveData);
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cloud</h1>
+    <p>Connected = @connected</p>
+    <p>PubKey = @pubKey</p>
+    <p>UserId = @userId</p>
+    <p>Push Notification Counter = @pushNotificationCounter</p>
+    <p>Push Notification Errors = @pushNotificationErrors</p>
+    <p>Last push Notification error = @lastPushNotificationError</p>
+    <p>LoadData = @LoadData</p>
+    <p>LoadAllData = @LoadAllData</p>
+    <p>SaveData = @SaveData</p>
+    <p>Keep alive failures = @keepAliveFailures</p>
+</div>
