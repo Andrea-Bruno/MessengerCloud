@@ -23,7 +23,8 @@ namespace MessengerStorage
             DeleteData,
             PushNotification
         }
-        public static Dictionary<Command, uint> Counter = new Dictionary<Command, uint>(); // used for statistical purposes(saves numbers of executed commands)
+        public Dictionary<Command, uint> Counter = new Dictionary<Command, uint>(); // used for statistical purposes(saves numbers of executed commands)
+
         private const string Extension = ".d";
         /// <summary>
         /// Method executes when new command is received from a cloud client. Depending on command it saves or loads data to/from the cloud.

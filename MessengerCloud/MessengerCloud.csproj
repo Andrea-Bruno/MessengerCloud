@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>7bbbc99f-c2c2-421b-811c-d5a6e6a57bdb</UserSecretsId>
     <Configurations>Debug;Release;DEBUG_RAM_CLOUD;DEBUG_RAM</Configurations>
+    <Title>Messenger Cloud</Title>
   </PropertyGroup>
 
   <ItemGroup>

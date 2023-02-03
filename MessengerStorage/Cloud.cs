@@ -36,7 +36,7 @@ namespace MessengerStorage
 
         }
         public string CloudAppDataPath;
-        private readonly Communication Communication;
+        public readonly Communication Communication;
         private static ushort CloudAppId = BitConverter.ToUInt16(Encoding.ASCII.GetBytes("cloud"), 0);
         const bool _multipleChatModes = true;
         private readonly string NetworkName = "mainnet";

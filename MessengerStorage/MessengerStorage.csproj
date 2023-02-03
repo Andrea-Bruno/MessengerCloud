@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RepositoryUrl>https://github.com/Andrea-Bruno/MessengerCloud/tree/master/MessengerStorage</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>Trustless cloud that works as a support for Anonymous messenger</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +15,10 @@
   <ItemGroup>
     <None Update="Certificates.p12">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
