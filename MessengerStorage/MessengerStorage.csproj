@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BitBoxLab\CloudServer\NotificationServer\NotificationServer.csproj" />
     <ProjectReference Include="..\..\..\EncryptedMessaging\EncryptedMessaging\EncryptedMessaging.csproj" />
-    <ProjectReference Include="..\NotificationServer\NotificationServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
