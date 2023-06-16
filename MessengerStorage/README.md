@@ -1,4 +1,4 @@
-# Messenger Storage, the fibrary for Messenger Cloud (GUI)
+# Messenger Storage, the library for Messenger Cloud (GUI)
 
 This here is [Anonymous Messenger](https://github.com/Andrea-Bruno/AnonymousMessenger) helper software, it adopts trustless security. It offers an encrypted cloud storage where devices encrypt their contact list and other data and send it for safekeeping. This allows the recovery of the contacts, when the messenger account with the passprase is recovered. The device encrypts the data before sending it and therefore the cloud has no way of being able to see it unencrypted (trustless).
 Both this project and the messaging software are open source and inspectable, no aspect of privacy and security has been overlooked, this work reaches military security levels.
