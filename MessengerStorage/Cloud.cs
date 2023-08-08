@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using EncryptedMessaging;
 using System.Text;
-using System.IO;
 
 namespace MessengerStorage
 {
