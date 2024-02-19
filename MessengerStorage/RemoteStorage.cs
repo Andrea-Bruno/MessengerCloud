@@ -9,7 +9,7 @@ namespace MessengerStorage
         {
             if (entryPoint== default)
             {
-                entryPoint = "test.cloudservices.agency";
+                entryPoint = "test.tc0.it";
             }
             AppDataPath = appDataPath;
             if (string.IsNullOrEmpty(AppDataPath))
