@@ -106,11 +106,13 @@ namespace MessengerStorage
                             }
                             break;
                         case Command.PushNotification:
-                            var keyValue = new Dictionary<Notification.Keys, byte[]>();
-                            keyValue.Add(Notification.Keys.ChatId, parameters[0]);
-                            keyValue.Add(Notification.Keys.DeviceToken, parameters[1]);
-                            keyValue.Add(Notification.Keys.IsVideo, parameters[2]);
-                            keyValue.Add(Notification.Keys.ContactNameOrigin, parameters[3]);
+                            var keyValue = new Dictionary<Notification.Keys, byte[]>
+                            {
+                                { Notification.Keys.ChatId, parameters[0] },
+                                { Notification.Keys.DeviceToken, parameters[1] },
+                                { Notification.Keys.IsVideo, parameters[2] },
+                                { Notification.Keys.ContactNameOrigin, parameters[3] }
+                            };
                             Notification.OnPushNotification(keyValue);
                             break;
                         default:
