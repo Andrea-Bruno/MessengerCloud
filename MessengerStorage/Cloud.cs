@@ -28,10 +28,10 @@ namespace MessengerStorage
 
 
             // Bind the event to change the connection when the connectivity changes
-            NetworkChange.NetworkAvailabilityChanged += (object sender, NetworkAvailabilityEventArgs e) => Context.OnConnectivityChange(e.IsAvailable);
+            NetworkChange.NetworkAvailabilityChanged += (object sender, NetworkAvailabilityEventArgs e) => Context.OnConnectivityChange(e.IsAvailable, CommunicationChannel.Channel.ConnectivityType.Internet);
 
             // Set the current connection status
-            Context.OnConnectivityChange(NetworkInterface.GetIsNetworkAvailable());
+            Context.OnConnectivityChange(NetworkInterface.GetIsNetworkAvailable(), CommunicationChannel.Channel.ConnectivityType.Internet);
 
         }
         public string CloudAppDataPath;
